@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!--
+Pawan Acharya
+2/26/2022
+Purpose: This is my new website that will act like my profile.
+It will include my information, my experiences, my resume, contact information and many more.
+-->
+
+<html lang="en">
+
+<!-- HTML head consists of title for the page and displays in browser toolbar -->
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Pawan's Main page</title>
+  <!-- Link to the external stylesheet-->
+  <link rel="stylesheet" href="css/stylesheet.css">
+  
+</head>
+
+<!--HTML Body -->
+
+<body>
+  <!--Navigation bar-->
+  <nav class="navbar">
+    <!-- LOGO -->
+    <div class="logo">Welcome to My site</div>
+    <!-- NAVIGATION MENU -->
+    <ul class="nav-links">
+      <!-- USING CHECKBOX HACK -->
+      <input type="checkbox" id="checkbox_toggle" />
+      <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+      <!-- NAVIGATION MENUS -->
+      <div class="menu">
+        <li><a href="index.html" target="_top">Home</a></li>
+        <li class="services">
+          <a href="projects/project1.html">Projects</a>
+          <!-- DROPDOWN MENU -->
+          <ul class="dropdown">
+            <li><a href="projects/project1.html" target="_top" >Project 1 </a></li>
+            <li><a href="projects/project1.html"target="_top">Project 2 </a></li>
+            <li><a href="projects/project1.html"target="_top">Project 3 </a></li>
+            <li><a href="projects/project1.html"target="_top">Project 4 </a></li>
+          </ul>
+        </li>
+        <li><a href="resume/resume.html"target="_top">Resume</a></li>
+        <li><a href="contact/contact.html"target="_top">Contact</a></li>
+      </div>
+    </ul>
+  </nav>
+
+  <!--end of Navigation bar-->
+
+  <div class="belowNav">
+
+    <h1>Namaste! I am very glad to see you here.</h1>
+    <img id="personalPhoto" alt="Pawan's personal image" src="resources/MyPhoto.png" style="width:150px">
+    <h2>Pawan Acharya</h2>
+  </div>
+
+</body>
+
+</html>
